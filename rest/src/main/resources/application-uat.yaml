@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-boot-mongo
+
+  data:
+    mongodb:
+      uri: mongodb://root:example@localhost:27017/spring_boot_mongo?authSource=admin
+
+logging:
+  level:
+    root: info
+    com.sts: info
+    org.springframework.web: info
+    org.mongodb.driver: info
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} [%file:%line] - %msg%n"
